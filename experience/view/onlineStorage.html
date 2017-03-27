@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>学习如何使用网盘</title>
+<link rel="stylesheet" type="text/css" href="../common.css">
+<style>
+.hand-ps01{left:51%;top:37%;}
+.hand-ps02{left:51%;top:22%;}
+.hand-ps03{left:51%;top:34%;}
+.hand-ps04{left:51%;top:45%;}
+.hand-ps05{left:76%;top:21%;}
+.hand-ps06{left:51%;top:22%;}
+.hand-ps07{left:51%;top:97%;}
+.hand-ps08{left:84%;top:68%;}
+.hand-ps09{left:81%;top:98%;}
+@media only screen and (-webkit-max-device-pixel-ratio : 2){
+.hand-ps04{left:51%;top:47%;}
+.hand-ps07{left:51%;top:104%;}
+.hand-ps08{left:84%;top:74%;}
+.hand-ps09{left:81%;top:105%;}
+}
+</style>
+<!-- respond.js for IE less than 9 -->
+ <!--[if lt IE 9]>
+<![endif]-->
+<script> 
+   (function() {
+     if (! 
+     /*@cc_on!@*/
+     0) return;
+     var e = "abbr, article, aside, audio, canvas, datalist, details, dialog, eventsource, figure, footer, header, hgroup, mark, menu, meter, nav, output, progress, section, time, video".split(', ');
+     var i= e.length;
+     while (i--){
+         document.createElement(e[i])
+     } 
+})();
+</script>
+</head>
+<!-- address book -->
+<body>
+<div class="b b01">
+    <div class="colourless opacity0 cl01" onclick="fn(1)"></div>
+    <div class='hand-all vbg-storage hand-ps01'></div>
+    <img src="../images/onlineStorage/ons00.jpg" alt="">
+</div>
+<div class="b b02">
+    <div class="colourless opacity0 cl02" onclick="fn(2)"></div>
+    <div class='hand-all vbg-storage hand-ps02'></div>
+    <img src="../images/onlineStorage/ons01.jpg" alt="">
+</div>
+<div class="b b03">
+    <div class="colourless opacity0 cl03" onclick="fn(3)"></div>
+    <div class='hand-all vbg-storage hand-ps03'></div>
+    <img src="../images/onlineStorage/ons02.jpg" alt="">
+</div>
+<div class="b b04">
+    <div class="colourless opacity0 cl04" onclick="fn(4)"></div>
+    <div class='hand-all vbg-storage hand-ps04'></div>
+    <img src="../images/onlineStorage/ons03.jpg" alt="">
+</div>
+<div class="b b05">
+    <div class="colourless opacity0 cl05" onclick="fn(5)"></div>
+    <div class='hand-all vbg-storage hand-ps05'></div>
+    <img src="../images/onlineStorage/ons04.jpg" alt="">
+</div>
+<div class="b b06">
+    <div class="colourless opacity0 cl06" onclick="fn(6)"></div>
+    <div class='hand-all vbg-storage hand-ps06'></div>
+    <img src="../images/onlineStorage/ons05.jpg" alt="">
+</div>
+<div class="b b07">
+    <div class="colourless opacity0 cl07" onclick="fn(7)"></div>
+    <div class='hand-all vbg-storage hand-ps07'></div>
+    <img src="../images/onlineStorage/ons06.jpg" alt="">
+</div>
+<div class="b b08">
+    <div class="colourless opacity0 cl09" onclick="fn(8)"></div>
+    <div class='hand-all vbg-storage hand-ps08'></div>
+    <img src="../images/onlineStorage/ons07.jpg" alt="">
+</div>
+<div class="b b09">
+    <div class="colourless opacity0 cl10" onclick="fn(9)"></div>
+    <div class='hand-all vbg-storage hand-ps09'></div>
+    <img src="../images/onlineStorage/ons08.jpg" alt="">
+</div>
+<div class="b b010">
+    <div class="black-bg opacity"></div>
+    <div class="last-operation">
+        <img class="ok-icon" src="../images/ok-icon_03.png" alt="">
+        <h6 class="ok-text">您现在可以</h6>
+        <div class="last-button">
+        <button class="again" type="button" onclick="fn(10)">再看一遍</button>
+        <button class="addredd-return" onclick=(window.open('')) type="button"><a href="return://">返回网盘</a></button>
+        </div>
+    </div>
+    <div class="hand-all vbg-storage hand-ps" onClick="window.open('')"></div>
+    <img src="../images/onlineStorage/ons00.jpg" alt="">
+</div>
+<footer class="help-ft pd-tb5">学习如何使用网盘（<i id="a">1</i>／10）</footer>
+</body>
+</html>
+<script type="text/ecmascript" src="../jquery-1.9.1.min.js"></script>
+<script>
+$(function(){
+    var s=0;
+    $(".vbg-storage img").hide().eq(0).show();
+    // 手势循环
+    $(".hand-all").append("<img src='../images/hand1.png'><img src='../images/hand2.png'><img src='../images/hand3.png'>");
+    function zidong(){
+        if(s<2){s=s+1}else{s=0}
+        $(".vbg-storage img").hide();
+        $(".hand-ps01 img:eq("+s+")").fadeIn(0);
+        $(".hand-ps02 img:eq("+s+")").fadeIn(0);
+        $(".hand-ps03 img:eq("+s+")").fadeIn(0);
+        $(".hand-ps04 img:eq("+s+")").fadeIn(0);
+        $(".hand-ps05 img:eq("+s+")").fadeIn(0);
+        $(".hand-ps06 img:eq("+s+")").fadeIn(0);
+        $(".hand-ps07 img:eq("+s+")").fadeIn(0);
+        $(".hand-ps08 img:eq("+s+")").fadeIn(0);
+        $(".hand-ps09 img:eq("+s+")").fadeIn(0);
+    }
+    var dingshiqi=setInterval(zidong,500);
+    $(".stro-ic").mouseenter(function(){
+        clearInterval(dingshiqi);   
+    },function(){                                                                                                                          
+        dingshiqi=setInterval(zidong,500);
+    
+    });
+});
+// 循环page
+$(".b").hide().eq(0).show();
+function fn(n){
+var nextn;
+if(n==10){
+    nextn=1;
+}else{
+    nextn=n+1;
+}
+$(".b0"+n).hide();
+$(".b0"+nextn).show();
+// 循环页码
+var x=document.getElementById("a").innerHTML;
+    var num;
+    if(x==10){num=1}else{num=parseInt(x)+1}
+    document.getElementById("a").innerHTML=num; 
+} 
+</script>
